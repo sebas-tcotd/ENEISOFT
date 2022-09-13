@@ -1,0 +1,248 @@
+.bg-dark-blue {
+  background-color: #223a59;
+}
+
+.w-1440 {
+  max-width: 1440px;
+}
+
+.ff-gilroy {
+  font-family: 'gilroylight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.lienzo {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 15px;
+}
+.card_section {
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 10px;
+  margin-left: 10px;
+
+  width: 65%;
+  background: rgba(244, 244, 244, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  align-items: center;
+}
+.card_container {
+  margin: 20px;
+}
+.card_title {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-weight: 600;
+  color: #223a59;
+  margin-bottom: 10px;
+}
+.card_description {
+  width: 90;
+}
+.card_title_second {
+  margin-top: 6px;
+  font-size: 26px;
+  line-height: 35px;
+  text-transform: lowercase;
+
+  color: #565656;
+}
+.bitty {
+  width: 120px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 760px) {
+  .card_title {
+    display: flex;
+  }
+  .card_section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 3.125em auto;
+  padding: 1em 5em 1em;
+  max-width: 1000px;
+}
+
+/* Timeline */
+/* Timeline */
+.card_box_time {
+  background: rgba(244, 244, 244, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.time_line_btn {
+  margin: 15px;
+}
+.box--time__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #203a59;
+  border-radius: 4px;
+}
+.time_line--reference {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+}
+.time_line_box--information {
+  padding-left: 5px;
+}
+@media screen and (max-width: 730px) {
+  .time_line_box--information {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.time_lime--icon {
+  display: flex;
+  padding-right: 10px;
+}
+.time_line--title {
+  color: #5fb5e7;
+}
+.time_line--description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.timeline {
+  line-height: 1.5em;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  position: relative;
+  counter-reset: section;
+}
+.timeline:before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(135deg, #197aaf, #cce7f8);
+  position: absolute;
+  top: 0;
+  left: -3.313em;
+  border-radius: 40px 40px;
+}
+
+.timeline--entry {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.timeline--entry__detail {
+  text-align: center;
+  background-color: #fdfdfd;
+  padding: 0em;
+  margin: 0;
+  border: 1px solid #a4a4a4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+.timeline--entry__detail .hora {
+  color: #6eabcc;
+  font-weight: 600;
+}
+.bola1:before {
+  background: #285269;
+}
+.bola2:before {
+  background: #197aaf;
+}
+.bola3:before {
+  background: #5fb5e7;
+}
+.bola4:before {
+  background: #64c0f5;
+}
+.bola5:before {
+  background: #94cdef;
+}
+.bola6:before {
+  background: #cce7f8;
+}
+.timeline--entry:before {
+  content: "";
+  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  border: 0.2em solid white;
+  border-radius: 50%;
+  position: absolute;
+  counter-increment: section;
+  left: -4.5em;
+}
+
+@supports (display: grid) {
+  @media (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-gap: 4.75em;
+      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
+    }
+    .timeline:before {
+      left: 49.5%;
+    }
+
+    .timeline--entry:nth-child(1) {
+      grid-area: entry1;
+    }
+    .timeline--entry:nth-child(2) {
+      grid-area: entry2;
+    }
+    .timeline--entry:nth-child(3) {
+      grid-area: entry3;
+    }
+    .timeline--entry:nth-child(4) {
+      grid-area: entry4;
+    }
+    .timeline--entry:nth-child(5) {
+      grid-area: entry5;
+    }
+    .timeline--entry:nth-child(6) {
+      grid-area: entry3;
+    }
+
+    .timeline--entry:nth-of-type(odd):before {
+      left: -3.8em;
+    }
+    .timeline--entry:nth-of-type(even):not(:nth-of-type(odd))
+      .timeline--entry__title:before {
+      left: 100%;
+      border-left: 10px solid #ec407a;
+      border-right: 0;
+    }
+    .timeline--entry:nth-of-type(even):before {
+      left: 103%;
+    }
+  }
+}
