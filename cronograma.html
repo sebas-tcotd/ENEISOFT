@@ -1,334 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronograma</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cronograma</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/cronograma.css" />
 
-   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/cronograma.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/6b2cefc45e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/6b2cefc45e.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue py-3">
-    <div class="container-fluid w-1440 mx-auto">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/logo.png" alt="Logo de Eneisoft">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item mt-2 mt-lg-0">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#">Cronograma</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold active" href="actividades.html">Actividades</a>
-          </li>
-        </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue py-3">
+      <div class="container-fluid w-1440 mx-auto">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/logo.png" alt="Logo de Eneisoft" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="nav-link fs-6 ff-gilroy fw-semibold" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-6 ff-gilroy fw-semibold"
+                href="cronograma.html"
+                >Cronograma</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-6 ff-gilroy fw-semibold"
+                href="actividades.html"
+                >Actividades</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- separador -->
-  </div>
-  <!-- cronograma -->
-  <div class="container">
-    <h3>Cronograma</h3>
-    <!-- jueves 15 -->
-    <div>
-      <h5>
-        <img src="assets/icons/calendar-fill.svg" alt="" />
-        Jueves 15 De Setiembre
-      </h5>
-      <!-- The Timeline -->
-      <div class="card_box_time">
-        <div class="box_time_line">
-          <div class="wrapper">
-            <div class="timeline">
-              <dl class="bola1 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Inaguracion</h5>
-                  <p class="hora">2:00pm - 3:00pm</p>
+    </nav>
+    <!-- cronograma -->
+    <div class="container">
+      <h1 class="fs-2 fw-semibold my-4">Cronograma</h1>
+      <!-- jueves 15 -->
+      <div>
+        <h5>
+          <img src="assets/icons/calendar-fill.svg" alt="" />
+          Jueves 15 de setiembre
+        </h5>
+        <!-- The Timeline -->
+        <div class="card_box_time">
+          <div class="box_time_line">
+            <div class="wrapper">
+              <div class="timeline">
+                <dl class="bola1 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Inaguracion</h5>
+                    <p class="hora">2:00pm - 3:00pm</p>
+                  </dd>
+                </dl>
+                <dl class="bola2 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia</h5>
+                    <p class="hora">3:00pm - 3:50pm</p>
+                  </dd>
+                </dl>
 
-                </dd>
-              </dl>
-              <dl class="bola2 timeline--entry">
+                <dl class="bola3 timeline--entry">
+                  <dt class="timeline--entry__title"></dt>
 
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia</h5>
-                  <p class="hora">3:00pm - 3:50pm</p>
-              </dl>
-              <dl class="bola3 timeline--entry">
-                <dt class="timeline--entry__title"></dt>
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia</h5>
+                    <p class="hora">4:00pm - 4:50pm</p>
+                  </dd>
+                </dl>
+                <dl class="bola4 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Taller</h5>
+                    <p class="hora">5:00pm - 6:00pm</p>
+                  </dd>
+                </dl>
 
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia</h5>
-                  <p class="hora">4:00pm - 4:50pm</p>
-                </dd>
-              </dl>
-              <dl class="bola4 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Taller</h5>
-                  <p class="hora">5:00pm - 6:00pm</p>
-              </dl>
-              <dl class="bola5 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Taller 2</h5>
-                  <p class="hora">6:00pm - 7:00pm</p>
-              </dl>
+                <dl class="bola5 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Taller 2</h5>
+                    <p class="hora">6:00pm - 7:00pm</p>
+                  </dd>
+                </dl>
+              </div>
             </div>
           </div>
         </div>
-        <div class="box--time__description">
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon" src="assets/icons/calendar.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">fecha</span><br/>
-                <span class="time_line--description">25 de setiembre del 2022</span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"  src="assets/icons/map.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Lugar</span><br>
-                <span class="time_line--description">Universidad Nacional Mayor de San Marcos </span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"  src="assets/icons/meet.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Meet</span><br/>
-                <span class="time_line--description">https://www.google.com.pe/maps</span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"   src="assets/icons/ponente.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Ponente</span><br/>
-                <span class="time_line--description">Chupetin Trujillo</span>
-              </div>
-            
-            </a>
-          </div>
-        </div>
       </div>
+      <!-- viernes 16 -->
+      <div>
+        <h5>
+          <img src="assets/icons/calendar-fill.svg" alt="" />
+          Viernes 16 de setiembre
+        </h5>
+        <!-- The Timeline -->
+        <div class="card_box_time">
+          <div class="box_time_line">
+            <div class="wrapper">
+              <div class="timeline">
+                <dl class="bola1 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia</h5>
+                    <p class="hora">2:00pm - 3:00pm</p>
+                  </dd>
+                </dl>
+                <dl class="bola2 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia 2</h5>
+                    <p class="hora">3:00pm - 3:50pm</p>
+                  </dd>
+                </dl>
 
-    </div>
-    <!-- viernes 16 -->
-    <div>
-      <h5>
-        <img src="assets/icons/calendar-fill.svg" alt="" />
-        viernes 16 De Setiembre
-      </h5>
-      <!-- The Timeline -->
-      <div class="card_box_time">
-        <div class="box_time_line">
-          <div class="wrapper">
-            <div class="timeline">
-              <dl class="bola1 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia</h5>
-                  <p class="hora">2:00pm - 3:00pm</p>
-                </dd>
-              </dl>
-              <dl class="bola2 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia 2</h5>
-                  <p class="hora">3:00pm - 3:50pm</p>
-              </dl>
-              <dl class="bola3 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Programacion <br> competitiva</h5>
-                  <p class="hora">4:00pm - 4:50pm</p>
-                </dd>
-              </dl>
-              <dl class="bola4 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Hackaton</h5>
-                  <p class="hora">5:00pm - 6:00pm</p>
-              </dl>
+                <dl class="bola3 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>
+                      Programacion <br />
+                      competitiva
+                    </h5>
+                    <p class="hora">4:00pm - 4:50pm</p>
+                  </dd>
+                </dl>
+                <dl class="bola4 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Hackaton</h5>
+                    <p class="hora">5:00pm - 6:00pm</p>
+                  </dd>
+                </dl>
+              </div>
             </div>
           </div>
         </div>
-        <div class="box--time__description">
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon" src="assets/icons/calendar.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">fecha</span><br/>
-                <span class="time_line--description">25 de setiembre del 2022</span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"  src="assets/icons/map.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Lugar</span><br>
-                <span class="time_line--description">Universidad Nacional Mayor de San Marcos </span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"  src="assets/icons/meet.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Meet</span><br/>
-                <span class="time_line--description">https://www.google.com.pe/maps</span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"   src="assets/icons/ponente.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Ponente</span><br/>
-                <span class="time_line--description">Chupetin Trujillo</span>
-              </div>
-            
-            </a>
-          </div>
-        </div>
       </div>
+      <!-- sabado 17 -->
+      <div>
+        <h5>
+          <img src="assets/icons/calendar-fill.svg" alt="" />
+          Sabado 17 De setiembre
+        </h5>
+        <!-- The Timeline -->
+        <div class="card_box_time">
+          <div class="box_time_line">
+            <div class="wrapper">
+              <div class="timeline">
+                <dl class="bola1 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Hackaton</h5>
+                    <p class="hora">2:00pm - 3:00pm</p>
+                  </dd>
+                </dl>
+                <dl class="bola2 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia</h5>
+                    <p class="hora">3:00pm - 3:50pm</p>
+                  </dd>
+                </dl>
 
-    </div>
-    <!-- sabado 17 -->
-    <div>
-      <h5>
-        <img src="assets/icons/calendar-fill.svg" alt="" />
-        Sabado 17 De Setiembre
-      </h5>
-      <!-- The Timeline -->
-      <div class="card_box_time">
-        <div class="box_time_line">
-          <div class="wrapper">
-            <div class="timeline">
-              <dl class="bola1 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Hackaton</h5>
-                  <p class="hora">2:00pm - 3:00pm</p>
-                </dd>
-              </dl>
-              <dl class="bola2 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia</h5>
-                  <p class="hora">3:00pm - 3:50pm</p>
-              </dl>
-              <dl class="bola3 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia 2</h5>
-                  <p class="hora">4:00pm - 4:50pm</p>
-                </dd>
-              </dl>
-              <dl class="bola4 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Taller</h5>
-                  <p class="hora">5:00pm - 6:00pm</p>
-              </dl>
-              <dl class="bola5 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Taller</h5>
-                  <p class="hora">6:00pm - 7:00pm</p>
-              </dl>
-              <dl class="bola5 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Conferencia 3</h5>
-                  <p class="hora">6:00pm - 7:00pm</p>
-              </dl>
-              <dl class="bola6 timeline--entry">
-                <dd class="timeline--entry__detail">
-                  <h5>Clausura del <br> Evento</h5>
-                  <p class="hora">7:00pm - 8:00pm</p>
-              </dl>
+                <dl class="bola3 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia 2</h5>
+                    <p class="hora">4:00pm - 4:50pm</p>
+                  </dd>
+                </dl>
+                <dl class="bola4 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Taller</h5>
+                    <p class="hora">5:00pm - 6:00pm</p>
+                  </dd>
+                </dl>
+
+                <dl class="bola5 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Taller</h5>
+                    <p class="hora">6:00pm - 7:00pm</p>
+                  </dd>
+                </dl>
+
+                <dl class="bola5 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>Conferencia 3</h5>
+                    <p class="hora">6:00pm - 7:00pm</p>
+                  </dd>
+                </dl>
+
+                <dl class="bola6 timeline--entry">
+                  <dd class="timeline--entry__detail">
+                    <h5>
+                      Clausura del <br />
+                      Evento
+                    </h5>
+                    <p class="hora">7:00pm - 8:00pm</p>
+                  </dd>
+                </dl>
+              </div>
             </div>
           </div>
         </div>
-        <div class="box--time__description">
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon" src="assets/icons/calendar.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">fecha</span><br/>
-                <span class="time_line--description">25 de setiembre del 2022</span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"  src="assets/icons/map.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Lugar</span><br>
-                <span class="time_line--description">Universidad Nacional Mayor de San Marcos </span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"  src="assets/icons/meet.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Meet</span><br/>
-                <span class="time_line--description">https://www.google.com.pe/maps</span>
-              </div>
-            
-            </a>
-          </div>
-          <div class="time_line_btn">
-            <a class="time_line--reference" href="#">
-              <img class="time_lime--icon"   src="assets/icons/ponente.svg" alt="" />
-              <div class="time_line_box--information">
-                <span class="time_line--title">Ponente</span><br/>
-                <span class="time_line--description">Chupetin Trujillo</span>
-              </div>
-            
-            </a>
-          </div>
-        </div>
       </div>
-
     </div>
-  </div>
 
-  <!-- Script de bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Script de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
