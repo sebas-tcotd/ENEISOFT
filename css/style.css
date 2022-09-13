@@ -1,28 +1,20 @@
 @font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../assets/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/gilroy-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'gilroylight';
   src: url('../assets/fonts/gilroy-light-webfont.woff2') format('woff2'),
-    url('../assets/fonts/gilroy-light-webfont.woff') format('woff');
+       url('../assets/fonts/gilroy-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'gilroylight', sans-serif;
-  font-weight: normal;
-}
-
-.ff-gilroy {
   font-family: 'gilroylight', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -32,82 +24,6 @@ h6 {
   background-color: #223A59;
 }
 
-.bg-orange {
-  background-color: #E78159;
-}
-
-.bg-green {
-  background-color: #649D7E;
-}
-
-.bg-fuchsia {
-  background-color: #CF82BC;
-}
-
-.bg-dark-fuchsia {
-  background-color: #90657B;
-}
-
-.bg-orange-2 {
-  background-color: #BB400F;
-}
-
-.text-orange {
-  color: #E78159
-}
-
-.text-green {
-  color: #649D7E
-}
-
-.bg-green-2 {
-  background-color: #3B664F;
-}
-
-.bg-fuchsia-2 {
-  background-color: #C53AA2;
-}
-
-.bg-dark-fuchsia-2 {
-  background-color: #713B56;
-}
-
-.w-xl-200 {
-  width: 200px;
-}
-
-.w-200 {
-  width: 200px;
-}
-
 .w-1440 {
   max-width: 1440px;
-}
-
-.fs-18 {
-  font-size: 18px;
-}
-
-.custom-link {
-  all: unset;
-  padding: 8px 12px;
-  background-color: white;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.rounded-20 {
-  border-radius: 20px;
-}
-
-@media screen and (min-width: 1000px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .w-xl-200 {
-    width: 100%;
-  }
 }
