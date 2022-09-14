@@ -7,11 +7,10 @@
 .block.layout {
   position: relative;
   overflow: hidden;
-  min-height: 1300px;
 }
 @media screen and (min-width: 1001px) {
   .block.layout {
-    min-height: 1300px;
+    min-height: 900px;
   }
 }
 
@@ -81,7 +80,6 @@
 .flex.layout1 {
   position: relative;
   flex-grow: 1;
-  margin: 0px 0px 121px;
   z-index: 2;
 }
 
