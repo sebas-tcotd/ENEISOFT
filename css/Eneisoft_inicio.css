@@ -596,6 +596,8 @@
   display: flex;
   flex-direction: row;
   border-radius: 15px 15px 15px 15px;
+  flex-wrap: wrap;
+  gap: 50px;
   width: 100%;
 }
 
@@ -652,6 +654,7 @@
   background-color: #223a59;
   border-radius: 15px 15px 15px 15px;
   justify-content: center;
+  text-decoration: none;
 }
 
 .subtitle21.layout {
@@ -659,7 +662,6 @@
   align-items: center;
   flex-grow: 1;
   height: 50px;
-  margin: 0px 0% 0px 60%;
   transition-duration: 0.4s;
 }
 
