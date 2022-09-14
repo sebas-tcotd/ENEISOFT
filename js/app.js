@@ -34,11 +34,7 @@ li.forEach( ( cadaLi , i )=>{
 
 $(document).ready(function () {
     AOS.init();
-
-
-
     menuScroll();
-
     $(window).scroll(menuScroll);
 });
 
