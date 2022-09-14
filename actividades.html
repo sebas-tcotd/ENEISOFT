@@ -1,190 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENEISOFT - Actividades</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ENEISOFT - Actividades</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/actividades.css" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/6b2cefc45e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/6b2cefc45e.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue py-3">
+      <div class="container-fluid w-1440 mx-auto">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="Logo de Eneisoft" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#"
+                >Cronograma</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 ff-gilroy fw-semibold active" href="#"
+                >Actividades</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue py-3">
-    <div class="container-fluid w-1440 mx-auto">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/logo.png" alt="Logo de Eneisoft">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item mt-2 mt-lg-0">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold" href="#">Cronograma</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-6 ff-gilroy fw-semibold active" href="#">Actividades</a>
-          </li>
-        </ul>
+    <div class="container w-1440 mx-auto mb-5">
+      <!-- Encabezado principal -->
+      <h1 class="fs-2 fw-semibold my-4">Descubre nuestras actividades!</h1>
+
+      <!-- Cards -->
+      <div class="row g-5" data-masonry='{ "percentPosition": true }'>
+        <div class="col col-md-6">
+          <div class="card bg-orange rounded-20 p-2 pb-xl-0">
+            <div class="card-body pb-xl-0">
+              <h5 class="card-title fs-1 mb-4 fw-bold text-white">
+                Conferencias
+              </h5>
+              <p class="card-text text-white mb-4">
+                Ponencias de entre 45 a 60 minutos cada una y que se darán a lo
+                largo de los tres días que dure el XII ENEISOFT. Las charlas del
+                primer día buscarán centrarse en temas de aspectos generales de
+                la carrera. A medida que se vayan desarrollando, una tras otra,
+                los temas irán aumentando de nivel. Se abordarán temáticas
+                relacionadas al desarrollo web, ciberseguridad, videojuegos,
+                internet de las cosas, inteligencia artificial, cloud computing,
+                cloud gaming, big data, entre otros.
+              </p>
+              <div
+                class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto"
+              >
+                <img
+                  src="./assets/ilustrations/conferencias.png"
+                  class="card-img-top img-fluid w-50 d-none d-xl-block"
+                  alt="Conferencias"
+                />
+                <div class="w-100">
+                  <div class="w-200 mx-auto">
+                    <div
+                      class="p-4 bg-orange-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100"
+                    >
+                      <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
+                      <span class="card-subtitle text-white mb-3 fw-bold">
+                        Septiembre
+                      </span>
+                      <span class="card-subtitle text-white fw-bold">
+                        15 - 17
+                      </span>
+                    </div>
+                    <div class="w-100">
+                      <a
+                        href="#"
+                        class="card-link custom-link fw-bold text-center text-orange"
+                        >Conoce más aquí <i class="fa-solid fa-caret-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <div class="card bg-green rounded-20 p-2 pb-xl-0">
+            <div class="card-body pb-xl-0">
+              <h5 class="card-title fs-1 mb-4 fw-bold text-white">
+                Programación Competitiva
+              </h5>
+              <p class="card-text text-white mb-4">
+                El evento tiene como finalidad ser una competencia de
+                programación interbase, interfacultad e interuniversitaria en la
+                Universidad Nacional Mayor de San Marcos con participantes a
+                nivel nacional, nuestro objetivo es crear un ambiente de
+                competencia sana usando la programación como medio para
+                competir, asimismo queremos integrar a las bases de la FISI y
+                aumentar su interacción creando oportunidades de ver talentos
+                escondidos, nuevas experiencias y en general, un evento
+                entretenido.
+              </p>
+              <div
+                class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto"
+              >
+                <div class="w-100">
+                  <div class="w-200 mx-auto">
+                    <div
+                      class="p-4 bg-green-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100"
+                    >
+                      <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
+                      <span class="card-subtitle text-white mb-3 fw-bold">
+                        Septiembre
+                      </span>
+                      <span class="card-subtitle text-white fw-bold"> 15 </span>
+                    </div>
+                    <div class="w-100 mb-2">
+                      <a
+                        href="#"
+                        class="card-link custom-link text-green fw-bold text-center"
+                        >Conoce más aquí <i class="fa-solid fa-caret-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/ilustrations/programacion-competitiva.png"
+                  class="card-img-top img-fluid w-75 d-none d-xl-block"
+                  alt="Programacion Competitiva"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <div class="card bg-fuchsia rounded-20 p-2">
+            <div class="card-body">
+              <h5 class="card-title fs-1 mb-4 fw-bold text-white">Hackathon</h5>
+              <p class="card-text text-white mb-4">
+                Este evento tiene como objetivo desarrollar y demostrar las
+                capacidades de programación y creatividad a través de proyectos
+                realizados de forma grupal, estos pueden ser el desarrollo de
+                una aplicación web o móvil, además llevando al límite la
+                comunicación y el trabajo en equipo. Consta de 3 días en los
+                cuales los equipos participantes tendrán que realizar un
+                proyecto que será evaluado por el jurado calificador. Logrando
+                dar a conocer buenos proyectos y a su vez descubriendo a jóvenes
+                programadores con talento.
+              </p>
+              <div
+                class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto"
+              >
+                <img
+                  src="./assets/ilustrations/hackaton.png"
+                  class="card-img-top img-fluid w-50 d-none d-xl-block"
+                  alt="Conferencias"
+                />
+                <div class="w-100">
+                  <div class="w-200 mx-auto">
+                    <div
+                      class="p-4 bg-fuchsia-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100"
+                    >
+                      <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
+                      <span class="card-subtitle text-white mb-3 fw-bold">
+                        Septiembre
+                      </span>
+                      <span class="card-subtitle text-white fw-bold">
+                        15 - 17
+                      </span>
+                    </div>
+                    <div class="w-100">
+                      <a
+                        href="#"
+                        class="card-link custom-link fw-bold text-center text-orange"
+                        >Conoce más aquí <i class="fa-solid fa-caret-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <div class="card bg-dark-fuchsia rounded-20 p-2 pb-xl-0">
+            <div class="card-body pb-xl-0">
+              <h5 class="card-title fs-1 fw-bold text-white">Talleres</h5>
+              <p class="card-text text-white mb-4">
+                Talleres afines a la Ingeniería de Software. Se desarrollarán
+                temas de interés de diversas etapas de la carrera con el fin de
+                lograr mayor público interesado en el evento. Estos talleres
+                serán dictados por alumnos, profesores y externos con
+                experiencia en el campo, dependiendo del nivel del tema a
+                desarrollar.
+              </p>
+              <div
+                class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto"
+              >
+                <div class="w-100">
+                  <div class="w-200 mx-auto">
+                    <div
+                      class="p-4 bg-dark-fuchsia-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100"
+                    >
+                      <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
+                      <span class="card-subtitle text-white mb-3 fw-bold">
+                        Septiembre
+                      </span>
+                      <span class="card-subtitle text-white fw-bold">
+                        15 - 17
+                      </span>
+                    </div>
+                    <div class="w-100">
+                      <a
+                        href="#"
+                        class="card-link custom-link fw-bold text-center text-orange"
+                        >Conoce más aquí <i class="fa-solid fa-caret-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/ilustrations/Talleres.png"
+                  class="card-img-top img-fluid w-50 d-none d-xl-block"
+                  alt="Conferencias"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+    <!-- Script de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
 
-  <div class="container w-1440 mx-auto mb-5">
-    <!-- Encabezado principal -->
-    <h1 class="fs-2 fw-semibold my-4">Descubre nuestras actividades!</h1>
-
-    <!-- Cards -->
-    <div class="row g-5" data-masonry='{ "percentPosition": true }'>
-      <div class="col col-md-6">
-        <div class="card bg-orange rounded-20 p-2 pb-xl-0">
-          <div class="card-body pb-xl-0">
-            <h5 class="card-title fs-1 mb-4 fw-bold text-white">Conferencias</h5>
-            <p class="card-text text-white mb-4">Ponencias de entre 45 a 60 minutos cada una y que se darán a lo largo
-              de los tres días que dure el XII ENEISOFT. Las charlas del primer día buscarán centrarse en temas de aspectos generales de la carrera. A medida que
-              se vayan desarrollando, una tras otra, los temas irán aumentando de nivel. Se abordarán temáticas relacionadas al
-              desarrollo web, ciberseguridad, videojuegos, internet de las cosas, inteligencia artificial, cloud computing, cloud
-              gaming, big data, entre otros.
-            </p>
-            <div class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto">
-              <img src="./assets/ilustrations/conferencias.png"
-                   class="card-img-top img-fluid w-50 d-none d-xl-block" alt="Conferencias">
-              <div class="w-100">
-                <div class="w-200 mx-auto">
-                  <div class="p-4 bg-orange-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100">
-                    <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
-                    <span class="card-subtitle text-white mb-3 fw-bold">
-                      Septiembre
-                    </span>
-                    <span class="card-subtitle text-white fw-bold">
-                      15 - 17
-                    </span>
-                  </div>
-                  <div class="w-100">
-                    <a href="#" class="card-link custom-link fw-bold text-center text-orange">Conoce más aquí <i class="fa-solid fa-caret-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col col-md-6">
-        <div class="card bg-green rounded-20 p-2 pb-xl-0">
-          <div class="card-body pb-xl-0">
-            <h5 class="card-title fs-1 mb-4 fw-bold text-white">Programación Competitiva</h5>
-            <p class="card-text text-white mb-4">El evento tiene como finalidad ser una competencia de programación interbase, interfacultad e interuniversitaria en la Universidad Nacional Mayor de San Marcos con participantes a nivel nacional, nuestro objetivo es crear un ambiente de competencia sana usando la programación como medio para competir, asimismo queremos integrar a las bases de la FISI y aumentar su interacción creando oportunidades de ver talentos escondidos, nuevas experiencias y en general, un evento entretenido.
-            </p>
-            <div class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto">
-              <div class="w-100">
-                <div class="w-200 mx-auto">
-                  <div class="p-4 bg-green-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100">
-                    <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
-                    <span class="card-subtitle text-white mb-3 fw-bold">
-                      Septiembre
-                    </span>
-                    <span class="card-subtitle text-white fw-bold">
-                      15
-                    </span>
-                  </div>
-                  <div class="w-100 mb-2">
-                    <a href="#" class="card-link custom-link text-green fw-bold text-center">Conoce más aquí <i class="fa-solid fa-caret-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <img src="./assets/ilustrations/programacion-competitiva.png" class="card-img-top img-fluid w-75 d-none d-xl-block" alt="Programacion Competitiva">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col col-md-6">
-        <div class="card bg-fuchsia rounded-20 p-2 ">
-          <div class="card-body ">
-            <h5 class="card-title fs-1 mb-4 fw-bold text-white">Hackathon</h5>
-            <p class="card-text text-white mb-4">Este evento tiene como objetivo desarrollar y demostrar las capacidades de programación y creatividad a través de proyectos realizados de forma grupal, estos pueden ser el desarrollo de una aplicación web o móvil, además llevando al límite la comunicación y el trabajo en equipo. Consta de 3 días en los cuales los equipos participantes tendrán que realizar un proyecto que será evaluado por el jurado calificador. Logrando dar a conocer buenos proyectos y a su vez descubriendo a jóvenes programadores con talento.
-            </p>
-            <div class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto">
-              <img src="./assets/ilustrations/hackaton.png"
-                   class="card-img-top img-fluid w-50 d-none d-xl-block" alt="Conferencias">
-              <div class="w-100">
-                <div class="w-200 mx-auto">
-                  <div class="p-4 bg-fuchsia-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100">
-                    <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
-                    <span class="card-subtitle text-white mb-3 fw-bold">
-                      Septiembre
-                    </span>
-                    <span class="card-subtitle text-white fw-bold">
-                      15 - 17
-                    </span>
-                  </div>
-                  <div class="w-100">
-                    <a href="#" class="card-link custom-link fw-bold text-center text-orange">Conoce más aquí <i class="fa-solid fa-caret-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col col-md-6">
-        <div class="card bg-dark-fuchsia rounded-20 p-2 pb-xl-0">
-          <div class="card-body pb-xl-0">
-            <h5 class="card-title fs-1 fw-bold text-white">Talleres</h5>
-            <p class="card-text text-white mb-4">Talleres afines a la Ingeniería de Software. Se desarrollarán temas de interés de diversas etapas de la carrera con el fin de lograr mayor público interesado en el evento. Estos talleres serán dictados por alumnos, profesores y externos con experiencia en el campo, dependiendo del nivel del tema a desarrollar.
-            </p>
-            <div class="d-flex flex-column flex-xl-row justify-content-xl-between align-items-center w-xl-200 mx-auto">
-              <div class="w-100">
-                <div class="w-200 mx-auto">
-                  <div class="p-4 bg-dark-fuchsia-2 d-flex flex-column align-items-center mb-4 fs-4 rounded-20 ff-gilroy w-100">
-                    <i class="fa-solid fa-calendar mb-3 text-white fs-1"></i>
-                    <span class="card-subtitle text-white mb-3 fw-bold">
-                      Septiembre
-                    </span>
-                    <span class="card-subtitle text-white fw-bold">
-                      15 - 17
-                    </span>
-                  </div>
-                  <div class="w-100">
-                    <a href="#" class="card-link custom-link fw-bold text-center text-orange">Conoce más aquí <i class="fa-solid fa-caret-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <img src="./assets/ilustrations/Talleres.png" class="card-img-top img-fluid w-50 d-none d-xl-block" alt="Conferencias">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Script de bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-
-  <!-- Script para el efecto Masonry (Cards tipo Pinterest) -->
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-    async></script>
-</body>
-
+    <!-- Script para el efecto Masonry (Cards tipo Pinterest) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </body>
 </html>

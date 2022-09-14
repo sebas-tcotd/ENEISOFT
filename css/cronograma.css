@@ -178,13 +178,17 @@ body {
   background: #5fb5e7;
 }
 .bola4:before {
-  background: #64c0f5;
+  background: #58baf3;
 }
 .bola5:before {
-  background: #94cdef;
+  background: #76bde6;
 }
 .bola6:before {
-  background: #cce7f8;
+  background: #93c3df;
+}
+
+.bola7:before {
+  background: #b6dbf1;
 }
 .timeline--entry:before {
   content: "";
@@ -200,14 +204,21 @@ body {
   position: absolute;
   counter-increment: section;
   left: -4.5em;
+  
 }
-
+.timeline--entry__detail{
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @supports (display: grid) {
   @media (min-width: 768px) {
     .timeline {
       display: grid;
       grid-gap: 4.75em;
-      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
+      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5" "entry6 ." ". entry7";
     }
     .timeline:before {
       left: 49.5%;
@@ -229,7 +240,10 @@ body {
       grid-area: entry5;
     }
     .timeline--entry:nth-child(6) {
-      grid-area: entry3;
+      grid-area: entry6;
+    }
+    .timeline--entry:nth-child(7) {
+      grid-area: entry7;
     }
 
     .timeline--entry:nth-of-type(odd):before {
